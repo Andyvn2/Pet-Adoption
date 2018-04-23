@@ -1,0 +1,50 @@
+<div witdth= 500px; 
+	 height= 700px; 
+	 border= 25px;green;>
+	 <h2>Edit Pet</h2>
+	<form (submit)= "onSubmitEdit( editThisPet._id )" class= "postForm">
+		{{ editThisPet | json }}
+		<br>
+		Pet Name:
+		<br>
+		<input type="text" name="newPet.name" [(ngModel)] = "editThisPet.name" >
+		<br>
+		Type:
+		<br>
+		<input type="text" name="newPet.type" [(ngModel)] = "editThisPet.type">
+		<br>
+		Description:
+		<br>
+		<input type="text" name="newPet.desc" [(ngModel)] = "editThisPet.description">
+		<br>
+		Skill 1:
+		<br>
+		<input type="text" name="newPet.skill1" [(ngModel)] = "editThisPet.skill1">
+		<br>
+		Skill 2:
+		<br>
+		<input type="text" name="newPet.skill2" [(ngModel)] = "editThisPet.skill2">
+		<br>
+		Skill 3:
+		<br>
+		<input type="text" name="newPet.skill3" [(ngModel)] = "editThisPet.skill3">
+		<br>
+		<input type="submit" name="submitEdit">
+		<button [routerLink]="['/']">Cancel</button>
+	</form>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+</div>

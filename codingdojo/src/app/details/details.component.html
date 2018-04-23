@@ -1,0 +1,27 @@
+<br>
+<br>
+<br>
+
+<a [routerLink]="['new']">Add a Pet to the Shelter</a>
+<table style="width:700px;" class="table">
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Actions</th>
+  </tr>
+
+
+<tr *ngFor="let pet of pets">
+
+	<td>{{pet.name}}</td>
+	<td>{{pet.type}}</td>
+	<td>
+		<button [routerLink]="['edit/'+pet._id]" (click) = "editButtonClicked()" >Edit</button>
+		<button [routerLink]="['details/'+pet._id]" >Details</button>
+	</td>
+</tr>
+ 
+</table>
+<p>
+  details works!
+</p>
